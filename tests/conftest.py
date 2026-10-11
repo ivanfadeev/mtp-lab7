@@ -2,6 +2,7 @@
 
 import pytest
 
+from library.data import seed
 from library.db import connect, create_schema
 
 
@@ -12,3 +13,10 @@ def connection():
     create_schema(database)
     yield database
     database.close()
+
+
+@pytest.fixture
+def library(connection):
+    """База в памяти с демонстрационными данными."""
+    seed(connection)
+    return connection
