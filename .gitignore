@@ -1,0 +1,34 @@
+# Байт-код и кеши интерпретатора
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Переменные окружения
+.env
+.env.local
+
+# Пакеты и сборка
+build/
+dist/
+*.egg-info/
+
+# Кеши инструментов
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Служебные файлы ОС и редакторов
+.DS_Store
+.idea/
+.vscode/
+
+# Файлы, которые создают демонстрация и API
+library.db
+export/
